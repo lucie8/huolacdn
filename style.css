@@ -1,0 +1,331 @@
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html, body, div, img, header, footer {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	line-height: 1;
+	max-width: 500px;
+    margin: 0 auto;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+html, body {
+	background-color: #ffffff;
+	color: #222;
+}
+
+h3, p {
+	margin: 0;
+}
+
+.girds, .footer {
+	margin: 10px auto;
+	max-width: 500px;
+}
+
+img {
+	border: 0;
+}
+
+a:link, a:visited {
+	color: #222;
+	text-decoration: none;
+}
+
+.header {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.grids, .footer {
+	margin: 100px auto;
+	max-width: 500px;
+}
+
+.section {
+	scroll-margin-top: 4em;
+}
+
+.tips {
+	font-size: .8rem;
+	text-align: center;
+	color: #f74b4b;
+	margin: 30px 0;
+}
+
+.header-link {
+	display: block;
+}
+
+.header-link img {
+	width: 100%;
+	display: block;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.grid {
+	width: 25%;
+	padding: 10px 15px;
+}
+
+.app {
+	text-align: center;
+	display: block;
+}
+
+.app .img {
+	width: 100%;
+	padding-bottom: 100%;
+	background-color: #aaa;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 5px;
+	border: 1px solid #666;
+}
+
+.app h3 {
+	text-align: center;
+	margin: 10px 1;
+	font-size: .9rem;
+	font-weight: normal;
+	color: #444;
+}
+
+.chaochuH3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* line-height: 25px; */
+    /* max-height: 25px; */
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}   
+    
+    
+.app button, .app .button {
+	color: #5961df;
+	border: 2px solid #5961df;
+	border-radius: 1rem;
+	display: inline-block;
+	margin: 0 auto;
+	width: 60px;
+    height: 25px;
+    line-height: 21px;
+	/*padding: 5px 17px;*/
+	font-size: 0.8rem;
+}
+
+.nav {
+	max-width: 500px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 1.5rem 0;
+	margin: 0 auto;
+	text-align: center;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.nav>a {
+	background-color: #eee;
+	border: 1px solid #eee;
+	border-radius: .5rem;
+	padding: 8px 15px;
+	margin: 0 10px;
+	font-size: .9rem;
+}
+
+.nav>a.active {
+	background-color: #CE1C00;
+	color: #fff;
+	border: 1px solid #ccc;
+}
+
+.main>div:last-of-type {
+	height: 100px;
+}
+
+.bottom-banner {
+	z-index: 1000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	border-radius: 12px 12px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #4158D0;
+	background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+}
+
+.bb-left {
+	display: flex;
+}
+
+.bb-left .icon {
+	height: 65px;
+    width: 65px;
+    margin-top: 3px;
+    margin-left: 5px;
+    border-radius: 12px;
+}
+
+.bb-app {
+	margin: 1rem;
+	color: white;
+}
+
+.bb-app h3 {
+	margin-bottom: .6rem;
+}
+
+.bb-button {
+	color: #460418;
+	padding: 10px 30px;
+	background-color: white;
+	margin: 15px;
+	text-align: center;
+	border-radius: 15px;
+	line-height: 20px;
+}
+
+.bb-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.popup {
+	position: absolute;
+	overflow: hidden;
+	flex-direction: row;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	top: 20%;
+	left: 50%;
+	width: 300px;
+	height: 300px;
+	margin-left: -150px;
+	border: 3px solid #333;
+	border-radius: 15px;
+}
+
+.popup-image {
+	background: gray;
+	display: block;
+	width: 50%;
+	flex-shrink: 0;
+	background-color: #ccc;
+	position: relative;
+}
+
+.popup-image img {
+	display: block;
+	border-bottom: 1px solid #333;
+}
+
+.popup-content {
+	padding: 18px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #fff;
+	text-align: center;
+}
+
+.popup .icon {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.popup h3 {
+	margin: 0;
+	color: #222;
+	font-size: 1rem;
+}
+
+.popup-content>.app>.img {
+	border-radius: 50%;
+}
+
+.popup-actions {
+	display: flex;
+}
+
+.popup .button {
+	background-color: #EC2405;
+	border-radius: 3px;
+	color: #fff;
+	width: 100px;
+	padding: 12px 6px;
+	font-size: .85rem;
+	margin: 0 auto;
+}
+
+.popup .btn-close {
+	background: none;
+	border: 1px solid #333;
+	color: #333;
+}
+
+.live-icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline-block;
+	background: red;
+	color: white;
+	font-size: .7rem;
+	padding: 2px 
+
+4px;
+	border-radius: 5px;
+}
+
+.tg {
+	text-align: center;
+	margin-top: 3rem;
+}
